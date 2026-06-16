@@ -99,9 +99,9 @@ pocoes-solucoes/
 │   ├── admin.html         Administração (CRUD)
 │   ├── css/style.css      Paleta escura + fonte Gill Sans
 │   ├── js/
-│   │   ├── loja.js        AJAX: lista poções (loja e destaques)
-│   │   └── admin.js       AJAX: cadastra, lista e remove
-│   └── img/               Ilustrações SVG (poções e cenas) — sem dependência externa
+│       ├── loja.js        AJAX: lista poções (loja e destaques)
+│       └── admin.js       AJAX: cadastra, lista e remove
+│   
 └── README.md
 ```
 
