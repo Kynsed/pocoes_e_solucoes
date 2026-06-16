@@ -80,7 +80,6 @@ Exemplos com `curl`:
 ```bash
 curl http://localhost:3000/api/pocoes
 curl -X POST http://localhost:3000/api/pocoes -H "Content-Type: application/json" \
-  -d '{"nome":"Poção do Sono","descricao":"Noite tranquila.","imagem":"img/generica.svg","preco":250}'
 curl -X DELETE http://localhost:3000/api/pocoes/1
 ```
 
@@ -110,6 +109,3 @@ pocoes-solucoes/
 - Paleta escura e fonte **Gill Sans** (com fallbacks), conforme pedido da
   cliente. Serifa **EB Garamond** usada nos títulos e no selo "Est. 1867".
 - "História" e "Poções" são páginas separadas, acessíveis pelo menu.
-- As imagens são **SVGs locais** (frascos coloridos e cenas em sépia), então o
-  site não depende de imagens externas. Ao cadastrar uma poção nova, basta
-  informar a URL ou o caminho; se a imagem falhar, cai em `img/generica.svg`.
