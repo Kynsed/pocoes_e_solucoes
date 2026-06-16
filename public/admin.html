@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administração — Poções &amp; Soluções</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <a class="wordmark" href="index.html"><b>Poções</b> &amp; Soluções <span class="est">Administração</span></a>
+            <nav class="nav">
+                <a href="index.html">Início</a>
+                <a href="historia.html">História</a>
+                <a href="pocoes.html">Poções</a>
+                <a href="index.html" class="pill">Ver a loja</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="band" style="padding:64px 0 48px">
+        <div class="container">
+            <p class="eyebrow">Painel da vendedora</p>
+            <h1>Balcão de <em>Annabelle</em></h1>
+            <p>Cadastre novas poções, confira o estoque e remova o que sair de linha.</p>
+        </div>
+    </section>
+
+    <main class="admin">
+        <div class="container">
+            <div class="admin__grid">
+                <!-- Formulário de cadastro -->
+                <section class="painel">
+                    <h2>Nova poção</h2>
+
+                    <div class="campo">
+                        <label for="nome">Nome</label>
+                        <input id="nome" type="text" placeholder="Poção do Sono Tranquilo">
+                    </div>
+
+                    <div class="campo">
+                        <label for="preco">Preço (moedas)</label>
+                        <input id="preco" type="number" min="0" placeholder="250">
+                    </div>
+
+                    <div class="campo">
+                        <label for="imagem">Imagem (URL ou caminho)</label>
+                        <input id="imagem" type="text" placeholder="https://… ou img/pocao.svg">
+                    </div>
+
+                    <div class="campo">
+                        <label for="descricao">Descrição</label>
+                        <textarea id="descricao" placeholder="O que esta poção faz?"></textarea>
+                    </div>
+
+                    <button class="btn-principal" id="btn-cadastrar" type="button">Cadastrar poção</button>
+                    <div class="aviso" id="aviso"></div>
+                </section>
+
+                <!-- Lista do estoque -->
+                <section class="estoque">
+                    <h2>Estoque <span id="contador"></span></h2>
+                    <div id="lista-admin">
+                        <p class="vazio">Carregando estoque…</p>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

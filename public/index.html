@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poções &amp; Soluções — Botica do Beco da Última Saída</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="topbar">
+        <div class="container topbar__inner">
+            <a class="wordmark" href="index.html"><b>Poções</b> &amp; Soluções <span class="est">Est. 1867</span></a>
+            <nav class="nav">
+                <a href="index.html" class="ativo">Início</a>
+                <a href="historia.html">História</a>
+                <a href="pocoes.html">Poções</a>
+                <a href="admin.html" class="pill">Administração</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Herói -->
+    <section class="hero">
+        <div class="container">
+            <div class="label">
+                <span class="corner tl"></span><span class="corner tr"></span>
+                <span class="corner bl"></span><span class="corner br"></span>
+
+                <svg class="sigil" viewBox="0 0 120 120" fill="none" aria-hidden="true">
+                    <circle cx="60" cy="60" r="55" stroke="currentColor" stroke-width="1" opacity="0.5"/>
+                    <circle cx="60" cy="60" r="48" stroke="currentColor" stroke-width="0.6" opacity="0.35"/>
+                    <path d="M52 32h16M54 32v12l-12 26a8 8 0 0 0 7 12h22a8 8 0 0 0 7-12L66 44V32"
+                          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M47 64h26" stroke="currentColor" stroke-width="2" opacity="0.7"/>
+                    <circle cx="55" cy="74" r="2.2" fill="currentColor" opacity="0.8"/>
+                    <circle cx="64" cy="80" r="1.6" fill="currentColor" opacity="0.7"/>
+                    <path d="M60 8l1.3 3.4 3.4 1.3-3.4 1.3L60 18l-1.3-3.4-3.4-1.3 3.4-1.3z" fill="currentColor"/>
+                    <path d="M20 56l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="currentColor" opacity="0.7"/>
+                    <path d="M100 56l1 2.5 2.5 1-2.5 1-1 2.5-1-2.5-2.5-1 2.5-1z" fill="currentColor" opacity="0.7"/>
+                </svg>
+
+                <h1>Poções &amp; <em>Soluções</em></h1>
+                <p class="hero__tag">
+                    A botica do Beco da Última Saída. Elixires, essências e caldeirões
+                    preparados à mão por Annabelle Merigold — desde quando a magia
+                    ainda se vendia a peso.
+                </p>
+                <div class="hero__est">Fundada em 1867</div>
+                <div class="hero__ctas">
+                    <a href="pocoes.html" class="btn btn--gold">Ver as poções</a>
+                    <a href="historia.html" class="btn btn--ghost">Nossa história</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- A botica -->
+    <section class="section">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__texto">
+                    <p class="eyebrow">A botica</p>
+                    <p>
+                        Escondida atrás da última esquina do beco, a Poções &amp; Soluções
+                        abastece bruxos, viajantes e curiosos com o que nenhuma farmácia
+                        comum ousaria estocar — da inspiração engarrafada ao perfume que
+                        persiste por semanas.
+                    </p>
+                    <p>
+                        Annabelle prepara cada lote pessoalmente, no mesmo caldeirão de
+                        cobre herdado da fundadora. Não fazemos entrega por aplicativo:
+                        fazemos magia. Escolha seu elixir e deixe a próxima transformação
+                        por nossa conta.
+                    </p>
+                </div>
+                <div class="intro__arte">
+                    <img src="img/arco-iris.svg" alt="Frasco da Poção do Arco-Íris">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Em destaque -->
+    <section class="section">
+        <div class="container">
+            <div class="section__head center">
+                <p class="eyebrow">Da prateleira</p>
+                <h2>Elixires em destaque</h2>
+                <p>Uma amostra do que sai fresco do caldeirão esta semana.</p>
+            </div>
+            <div class="grade" id="grade-pocoes" data-limit="3">
+                <p class="vazio">Invocando as poções…</p>
+            </div>
+            <div class="mais">
+                <a href="pocoes.html" class="btn btn--ghost">Ver todas as poções</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaser história -->
+    <section class="section">
+        <div class="container">
+            <div class="intro">
+                <div class="intro__arte">
+                    <img src="img/loja-1867.svg" alt="A botica em 1867" style="width:84%;border-radius:6px;border:1px solid var(--line-strong)">
+                </div>
+                <div class="intro__texto">
+                    <p class="eyebrow">Desde 1867</p>
+                    <h2 style="font-family:var(--font-display);font-weight:500;font-size:clamp(1.9rem,4vw,2.6rem);margin:0 0 16px;line-height:1.1">
+                        Mais de um século engarrafando o impossível
+                    </h2>
+                    <p style="color:var(--muted);font-size:1.06rem;margin:0 0 22px">
+                        A loja abriu as portas no inverno de 1867, quando a primeira
+                        Merigold trocou uma barraca de feira por uma vitrine de carvalho
+                        no beco. A receita do balcão nunca mudou: paciência, ervas raras
+                        e um toque de ousadia.
+                    </p>
+                    <a href="historia.html" class="btn btn--ghost">Conheça a história</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="rodape">
+        <div class="container">
+            <div class="rodape__grid">
+                <div>
+                    <p class="rodape__marca">Poções &amp; Soluções</p>
+                    <p>Elixires artesanais desde 1867. Use com sabedoria — a casa não
+                       se responsabiliza por efeitos colaterais desconhecidos.</p>
+                </div>
+                <div>
+                    <h4>Onde nos achar</h4>
+                    <ul>
+                        <li>Beco da Última Saída, 1867</li>
+                        <li>Última esquina à esquerda</li>
+                        <li>Aberto da lua nova à cheia</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contato</h4>
+                    <ul>
+                        <li>coruja@pocoesesolucoes.bruxo</li>
+                        <li>(11) 1867-0000</li>
+                        <li>Lareira: pó de flu "Merigold"</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rodape__base">
+                <span>© 1867–2026 Annabelle Merigold</span>
+                <span>SCC0219 — Introdução ao Desenvolvimento Web</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/loja.js"></script>
+</body>
+</html>

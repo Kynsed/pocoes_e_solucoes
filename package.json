@@ -1,0 +1,16 @@
+{
+  "name": "pocoes-e-solucoes",
+  "version": "1.0.0",
+  "description": "Web Service e loja de poções da Annabelle Merigold - SCC0219 Atividade Prática 2",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  }
+}
